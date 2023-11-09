@@ -1,0 +1,262 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{rypoll.jpg}
+\name{Ryan Pollard}{}
+
+\position{MSC Statistics, Data Scientist with seven years experience
+across different industries.}
+\address{Manchester, UK}
+
+\mobile{+44 7500 693 434}
+\email{\href{mailto:rypoll@gmail.com}{\nolinkurl{rypoll@gmail.com}}}
+\github{rypoll}
+\linkedin{rypoll}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{float} \usepackage{multicol} \usepackage{colortbl}
+
+\arrayrulecolor{white}
+
+\usepackage{hhline}
+
+\definecolor{light-gray}{gray}{0.95}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {March 2022}
+    {Ryan Pollard~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{technical-skills}{%
+\section{Technical Skills}\label{technical-skills}}
+
+\begin{table}[!h]
+\centering\begingroup\fontsize{9}{11}\selectfont
+
+\begin{tabular}{>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}c}
+\toprule
+\textcolor[HTML]{414141}{\textbf{Coding}} & \textcolor[HTML]{414141}{\textbf{Analytics}} & \textcolor[HTML]{414141}{\textbf{Software}} & \textcolor[HTML]{414141}{\textbf{Markup Languages}}\\
+\midrule
+\textcolor[HTML]{7f7f7f}{R, Python, SQL, SAS, Stata, HTML, Tensorflow} & \textcolor[HTML]{7f7f7f}{Machine Learning, Predictive Modeling, NLP, R Shiny, Time Series} & \textcolor[HTML]{7f7f7f}{Jupyter Notebook, AWS, Sagemaker, Pycharm, GIT, SAS, Streamlit, Docker, Google Cloud Run} & \textcolor[HTML]{7f7f7f}{HTML, \LaTeX, RMarkdown}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{current-employment}{%
+\section{Current employment}\label{current-employment}}
+
+\begin{cventries}
+    \cventry{Data Scientist}{Tinka (Fintech)}{Working remotely}{Feb 2022 - Present}{\begin{cvitems}
+\item Working in a deferred payments company applying state of the art machine learning techniques on large datasets.
+\item Implementing end-to-end machine learning pipelines in AWS and Databricks.
+\item Design and analysis of experiments.
+\item Driving the collection of new data and refinement of existing data sources to increase model performance.
+\item Technical skills used: Python, SQL, Spark, AWS, Databricks.
+\end{cvitems}}
+\end{cventries}
+
+\href{https://www.upwork.com/freelancers/rypoll}{Freelancer profile
+link: www.upwork.com/freelancers/rypoll}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{MSc Statistics}{University of Sheffield}{Sheffield, United Kingdom}{Sept. 2020 - Sept. 2021}{\begin{cvitems}
+\item Machine Learning: Scikit-learn, Keras, Neural Networks, Supervised and Unsupervised learning.
+\item R Shiny.
+\item Time Series.
+\item Bayesian Statistics.
+\item Dissertation: Sentiment Analysis using Topic Modelling of Twitter data and it's impact on the stock market.
+\end{cvitems}}
+    \cventry{BSc Mathematics}{University of Manchester}{Manchester, United Kingdom}{Sept. 2007 - Sept. 2010}{\begin{cvitems}
+\item Various statistical and probability modules elected.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{work-experience}{%
+\section{Work Experience}\label{work-experience}}
+
+\begin{cventries}
+    \cventry{Data Scientist}{Freelancer w/ Various clients}{Remote}{Jun. 2021 - Feb. 2022}{\begin{cvitems}
+\item Deployment of predictive models, data science tools and visualisations with various clients.
+\item 100\% Job Success Rate and Top Rated Freelancer.
+\item NLP: Sentiment Analysis, Information Retrieval, spaCY dependency trees (Information Retrieval), Search Engines.
+\item Neural Networks.
+\item Web Scraping.
+\item R Shiny Dashboards - Dockerised for deployment.
+\item Medical Statistics.
+\item Created a Neural Network using ensemble methods in order to predict gene behaviour.
+\item Dockerised the model into an R shiny application - allowing for users to upload new training data.
+\item Segmented bicycle-# hire review data using LDA Topic Modeling and t-SNE in order to identify issues specific to certain regions.
+\item Involved in the building of a search engine that spans across medical literature in order to visualise aspects mentioned in the papers and how they correlate with other mentions (Network analysis).
+\item Built a predictive model that predicts which new independent sellers on an auction website are likely to have success in the future  in order to determine what type of assistance sellers could benefit from, maximising their returns.
+\end{cvitems}}
+    \cventry{Mathematics Teacher | Traveling}{Various schools}{Colombia | China}{Jan. 2018 - July 2020}{\begin{cvitems}
+\item Teaching Mathematics in Colombia and China.
+\item Travelling through Central/South America and Asia.
+\end{cvitems}}
+    \cventry{Senior Risk Modeler}{The Co-Operative Bank}{Manchester, United Kingdom}{Feb. 2016 - July 2017}{\begin{cvitems}
+\item Leading projects, communicating progress and new ideas with stakeholders, planning and executing the data-lead projects.
+\item Developing and maintaining credit risk statistical models.
+\item Analysing and investigating risk modesl, giving a greater understanding of how each one works within its portfolio, and how it can be improved.
+\item Running and creation of model dashboards.
+\end{cvitems}}
+    \cventry{Preditctive Modeler}{British Gas}{Manchester, United Kingdom}{Mar. 2014 - Feb. 2016}{\begin{cvitems}
+\item Building scorecards and ensuring their accuracy and compliance with model assumptions.
+\item Built a contact model that served to find the best method of communication with customers in order to recoup debt most effectively.
+\item Creation and running of MI of models.
+\item Identifying opportunities, engaging stakeholders and  building models such that the models improve processes within the business to recoup money more efficiently from the debt portfolio.
+\end{cvitems}}
+    \cventry{Statistician}{Adelphi Real World}{Manchester, United Kingdom}{June 2011 - October 2013}{\begin{cvitems}
+\item Undertaking different types of statistical tests on medical data that later went onto publications and medical journals in order to highlight pharmaceutical benefits and market opportunities.
+\item Various medical statistical techniques used with a focus on accuracy and obeying model assumptions, such as  Survival Analysis, T-tests and other tests.
+\item Cleaning  data to get it in a form to be tested.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{certifications}{%
+\section{Certifications}\label{certifications}}
+
+\begin{cventries}
+    \cventry{ }{Databases and SQL for Data Science with Python}{Coursera}{ }{}\vspace{-4.0mm}
+    \cventry{ }{Natural Language Processing: Machine Learning NLP In Python}{Udemy}{ }{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\begin{itemize}
+\item
+  \href{https://www.researchgate.net/publication/275423120_A_cross-national_examination_of_the_association_between_behavioral_psychological_cognitive_and_functional_symptoms_on_quality_of_life_of_people_with_Alzheimer's_disease}{\emph{A
+  cross-national examination of the association between behavioral,
+  psychological, cognitive and functional symptoms on quality of life of
+  people with Alzheimer's disease.} \textbf{R. Pollard}, A. Duhig, Sube
+  Banerjee, S. Hass, J. Jackson.}
+\item
+  \href{https://thorax.bmj.com/content/67/Suppl_2/A155.1}{\emph{Impact
+  of morning symptoms experienced by COPD patients on exacerbation risk,
+  rescue inhaler usage and normal daily activities.} \textbf{Ryan
+  Pollard}, Mark Small, Sarah Broomfield, Steve Fermer.}
+\end{itemize}
+
+\hypertarget{languages}{%
+\section{Languages}\label{languages}}
+
+\begin{itemize}
+\tightlist
+\item
+  Spanish: B2 (Common European Framework of Reference for Languages:
+  A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User)
+\end{itemize}
+
+
+
+\end{document}

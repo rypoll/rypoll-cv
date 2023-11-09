@@ -1,0 +1,219 @@
+---
+name: Ryan Pollard
+position: "MSC Statistics, Data Scientist with seven years experience across different industries."
+address: |
+         | Manchester, UK
+profilepic: rypoll.jpg
+#www: https://www.upwork.com/freelancers/~01657a3e3e92683896
+phone: +44 7500 693 434
+email: "rypoll@gmail.com"
+github: rypoll
+linkedin: rypoll
+headcolor: '414141'
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    keep_tex: false
+always_allow_html: yes
+header-includes:
+  \usepackage{float}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \arrayrulecolor{white}
+  \usepackage{hhline}
+  \definecolor{light-gray}{gray}{0.95}
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+library(kableExtra)
+library(ggplot2)
+library(dplyr)
+library(sf)
+library(ggrepel)
+library(emojifont)
+library(fontawesome)
+library(huxtable)
+library(gridExtra)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+# Technical Skills 
+
+<!-- \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}} -->
+
+<!-- \par\noindent\nobreak\vspace{-30pt}\rule{\textwidth}{1pt} -->
+
+```{r techtable, results='markup'}
+tribble(
+   ~`Coding`, ~`Analytics`, ~`Software`, ~`Markup Languages`,
+  "R, Python, SQL, SAS, Stata, HTML, Tensorflow",
+  "Machine Learning, Predictive Modeling, NLP, R Shiny, Time Series",
+  "Jupyter Notebook, AWS, Sagemaker, Pycharm, GIT, SAS, Streamlit, Docker, Google Cloud Run",
+  "HTML, \\LaTeX, RMarkdown"
+) %>%
+  kable(booktabs = T, align = 'c', escape = F, format = "latex") %>%
+  kable_styling(full_width = F, font_size = 9,latex_options = "hold_position") %>% 
+  row_spec(0, bold = T, color = "#414141") %>% 
+  row_spec(1, bold = F, color = "#7f7f7f") %>% 
+  column_spec(column = 1:3, width = '4.75cm')
+```
+
+
+# Current employment
+
+```{r consulting}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Data Scientist", "Tinka (Fintech)", "Working remotely", "Feb 2022 - Present", 
+    list("Working in a deferred payments company applying state of the art machine learning techniques on large datasets.",
+         "Implementing end-to-end machine learning pipelines in AWS and Databricks.",
+         "Design and analysis of experiments.",
+         "Driving the collection of new data and refinement of existing data sources to increase model performance.",
+         "Technical skills used: Python, SQL, Spark, AWS, Databricks."
+         #,
+         #"Hosting workshops improving data literacy, development, analysis and modelling capabilities."
+    )
+  #,
+  # "Research assistant", "Monash University", "Clayton, Australia", "Oct. 2015 - Present", 
+  #   list("Involved in many internal and external data projects of varying size and complexity.", 
+  #        "Projects typically feature large scale time series modelling or analysis, cross-sectional modelling and creating tools for improving workflows.",
+  #        "Consulting project clients include: Huawei, Monash University, R Consortium, NSW Chief Scientist office, DiabetesLab and Tennis Australia."),
+  # "Teaching Associate", "Monash University", "Clayton, Australia", "Mar. 2016 - Present", "Sessional teaching of university students undertaking Bachelor's and Master's degrees. Specific classes are listed in 'Teaching experience'."
+  # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+[Freelancer profile link: www.upwork.com/freelancers/rypoll](https://www.upwork.com/freelancers/rypoll)
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "MSc Statistics", "University of Sheffield", "Sheffield, United Kingdom", "Sept. 2020 - Sept. 2021", 
+    list("Machine Learning: Scikit-learn, Keras, Neural Networks, Supervised and Unsupervised learning.",
+         "R Shiny.",
+         "Time Series.",
+         "Bayesian Statistics.",
+         "Dissertation: Sentiment Analysis using Topic Modelling of Twitter data and it's impact on the stock market."),
+  
+  "BSc Mathematics", "University of Manchester", "Manchester, United Kingdom", "Sept. 2007 - Sept. 2010", 
+    list("Various statistical and probability modules elected."
+)
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+
+
+# Work Experience
+
+```{r workxp}
+tribble(
+  ~ position, ~ workplace, ~ loc, ~ dates, ~ details,
+  
+  "Data Scientist", "Freelancer w/ Various clients", "Remote", "Jun. 2021 - Feb. 2022", 
+    list( "Deployment of predictive models, data science tools and visualisations with various clients.",
+         "100\\% Job Success Rate and Top Rated Freelancer.",
+         "NLP: Sentiment Analysis, Information Retrieval, spaCY dependency trees (Information Retrieval), Search Engines.",
+         "Neural Networks.",
+         "Web Scraping.",
+         "R Shiny Dashboards - Dockerised for deployment.",
+         "Medical Statistics.",
+      "Created a Neural Network using ensemble methods in order to predict gene behaviour.",
+         "Dockerised the model into an R shiny application - allowing for users to upload new training data.",
+         "Segmented bicycle-# hire review data using LDA Topic Modeling and t-SNE in order to identify issues specific to certain regions.",
+         "Involved in the building of a search engine that spans across medical literature in order to visualise aspects mentioned in the papers and how they correlate with other mentions (Network analysis).",
+         "Built a predictive model that predicts which new independent sellers on an auction website are likely to have success in the future  in order to determine what type of assistance sellers could benefit from, maximising their returns."
+
+),
+  
+  
+  "Mathematics Teacher | Traveling", "Various schools", "Colombia | China", "Jan. 2018 - July 2020", 
+    list("Teaching Mathematics in Colombia and China.",
+         "Travelling through Central/South America and Asia."
+
+),
+
+  "Senior Risk Modeler", "The Co-Operative Bank", "Manchester, United Kingdom", "Feb. 2016 - July 2017", 
+    list("Leading projects, communicating progress and new ideas with stakeholders, planning and executing the data-lead projects.",
+"Developing and maintaining credit risk statistical models.",
+"Analysing and investigating risk modesl, giving a greater understanding of how each one works within its portfolio, and how it can be improved.",
+"Running and creation of model dashboards."
+),
+
+  "Preditctive Modeler", "British Gas", "Manchester, United Kingdom", "Mar. 2014 - Feb. 2016", 
+    list( "Building scorecards and ensuring their accuracy and compliance with model assumptions.",
+          "Built a contact model that served to find the best method of communication with customers in order to recoup debt most effectively.",
+          "Creation and running of MI of models.",
+          "Identifying opportunities, engaging stakeholders and  building models such that the models improve processes within the business to recoup money more efficiently from the debt portfolio."
+      
+    ),
+
+  "Statistician", "Adelphi Real World", "Manchester, United Kingdom", "June 2011 - October 2013", 
+    list( "Undertaking different types of statistical tests on medical data that later went onto publications and medical journals in order to highlight pharmaceutical benefits and market opportunities.",
+          "Various medical statistical techniques used with a focus on accuracy and obeying model assumptions, such as  Survival Analysis, T-tests and other tests.", 
+          "Cleaning  data to get it in a form to be tested."
+          
+      
+    )
+
+) %>% 
+  detailed_entries(position, dates, workplace, loc, details)
+```
+
+
+# Certifications
+
+```{r Certs}
+tribble(
+  ~ blank, ~blank2, ~ title, ~ site,
+  " "," ", "Databases and SQL for Data Science with Python", "Coursera", 
+  " "," ", "Natural Language Processing: Machine Learning NLP In Python", "Udemy"
+
+
+) %>% 
+  detailed_entries(blank,blank2,title, site)
+```
+
+# Publications
+
+- [*A cross-national examination of the association between behavioral, psychological, cognitive and functional symptoms on quality of life of people with Alzheimer's disease.* **R. Pollard**, A. Duhig, Sube Banerjee, S. Hass, J. Jackson.](https://www.researchgate.net/publication/275423120_A_cross-national_examination_of_the_association_between_behavioral_psychological_cognitive_and_functional_symptoms_on_quality_of_life_of_people_with_Alzheimer's_disease)
+
+- [*Impact of morning symptoms experienced by COPD patients on exacerbation risk, rescue inhaler usage and normal daily activities.* **Ryan Pollard**, Mark Small, Sarah Broomfield, Steve Fermer.](https://thorax.bmj.com/content/67/Suppl_2/A155.1)
+
+
+
+
+
+
+# Languages
+
+* Spanish: B2 (Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User)
+
+```{r langforeign, results='markup'}
+# data.frame(
+#   Skill = c("Reading", "Writing", "Listening","Speaking"),
+#   English = cell_spec(c(rep("Native", 4)), 'latex', color = '#414141'), 
+#   Spanish = cell_spec(c("C1","B2","B2","B2"), 'latex', color = '#414141')
+# ) %>%
+#   kable(booktabs = T, align = 'c', escape = F, format = "latex") %>%
+#   kable_styling(full_width = F, font_size = 9) %>% 
+#   footnote(
+#     footnote_as_chunk = T,
+#     general_title = " ",
+#     general = "\\\\tiny Common European Framework of Reference for Languages: A1/A2: Basic User. B1/B2: Independent User. C1/C2: Proficient User",
+#     escape = F
+#   ) %>%
+#   column_spec(column = 1:2, width = '2.4cm') #%>% 
+#   # add_header_above(' ', line = F) %>%
+#   # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+
+<!-- \smallskip -->

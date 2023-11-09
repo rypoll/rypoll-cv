@@ -1,0 +1,223 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{rypoll.jpg}
+\name{Ryan Pollard \textbar{} Cover Letter}{}
+
+\position{Data Scientist}
+\address{Manchester, United Kingdom}
+
+\mobile{+44 7500 693 434}
+\email{\href{mailto:rypoll@gmail.com}{\nolinkurl{rypoll@gmail.com}}}
+\github{rypoll}
+\linkedin{rypoll}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {December, 2021}
+    {Ryan Pollard \textbar{} Cover Letter~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{about-me}{%
+\section{About me}\label{about-me}}
+
+I'm a highly motivated person with a strong desire to use the skills
+I've gained and the skills I'm continuing to learn in order to provide
+benefit to organisations and individuals. With over seven years of
+experience across different industries, I've been able to learn many
+different aspects of how data is used in a practical setting - from
+dashboards, data analysis, machine learning models and deployment of
+models into apps. I'm committed to improving my own skills by learning
+new data science techniques on a daily basis; I recently taught myself
+NLP techniques such as sentiment analysis and recommendation systems and
+went on to build my own personal projects and be involved in projects
+with clients that used these acquired skills.
+
+Above all, I'm someone who places extreme importance on doing a great
+job. With my recent work on the freelance website Upwork I've managed to
+be involved in interesting and challenging projects and managed to
+receive 5-star reviews for every single project I've taken on. I like
+being in situations where I'm faced with new problems and finding ways
+to deal with them in order to build something functional and useful. I
+spent a lot of time learning my craft and continue to do so and the
+motivator behind that is having the ability to aid and provide function
+to people and organisations.
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+I'm a qualified Statistician with over six years experience in various
+data science roles.
+
+My learning journey started at the University of Manchester where I
+studied Mathematics and naturally gravitated towards statistical
+modules. After university, I worked as a Data Scientist in the
+Pharmaceutical, Energy and Banking industries; along the way using many
+different statistical techniques and seeing how machine learning can
+provide huge benefits to an organisation.
+
+I started my career in a Pharmaceutical company - performing statistical
+tests and analysing medical questionnaires in order to provide insight
+and draw conclusions. I processed and performed tests that would later
+go onto publications. These publications would be used to highlight the
+relationship between drugs and disease outcomes.
+
+Later, I moved into the energy industry, building predictive models that
+were used to segment customers in order for the business to react to
+it's client base in the most effective way possible. I built statistical
+models using random forests to classify customers. The classifications
+would drive business decisions, for instance, a model would identify
+certain customers who are in debt and would be best targeted by a phone
+call as a preferred method of communication in order to recoup that
+debt. Understanding customer behavior using the models I created made
+processes more efficient and saved money in turn.
+
+Moving onto the banking industry, I was in charge of the maintenance and
+updating of credit risk models that dictated the allocation of funds of
+the bank. I also created dashboards -- producing clear and concise
+analysis that ensured the business understood its current portfolio and
+make decisions off the back of that.
+
+More recently I took time out to study a Masters in Statistics to
+understand my profession better. I've taken on freelance projects -
+building machine learning models and deploying them into apps for
+various clients.
+
+After a stint of teaching Mathematics and traveling in 2018, I chose to
+study a MSc in Statistics in 2020 at the University of Sheffield to
+strengthen the foundation of the Data Science techniques I've learnt and
+also acquire modern techniques. I used various classification and
+dimension reduction here, using sci-kit learn and keras, Bayesian
+statistics and Time series. I was also involved in multiple projects
+making R shiny dashboards.
+
+All these projects can be found on my github, please feel free to take a
+look using the link at the top of this page.
+
+\hypertarget{what-i-can-do}{%
+\section{What I can do}\label{what-i-can-do}}
+
+Throughout my career I've used and understood many different techniques
+and programming languages. I've used Python, SQL, SAS and R extensively.
+On top of that I have a depth of experience in various Machine Learning
+techniques and other statistical methods that can provide benefits in
+different ways.
+
+In my degree and freelancing career I've built various machine learning
+models (sci-kit learn, Neural Networks and more), to classify, reduce
+dimensionality and deploy into apps through which users without a
+statistical background could investigate the profile of genes.
+
+I'm passionate about using my skills to provide functional solutions to
+people and organisations.
+
+
+
+\end{document}

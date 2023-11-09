@@ -1,0 +1,77 @@
+---
+name: Ryan Pollard | Cover Letter
+date: "`r format(Sys.time(), '%B, %Y')`"
+profilepic: rypoll.jpg
+phone: +44 7500 693 434
+qualifications: BSc(Hons), MSc
+position: Data Scientist
+address: Manchester, United Kingdom
+email: rypoll@gmail.com
+website: rappoll.wordpress.com
+github: rypoll
+linkedin: rypoll
+headcolor: '414141'
+output:
+  vitae::awesomecv:
+    keep_tex: yes
+  vitae::latexcv: default
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+library(kableExtra)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# About me
+
+I'm a highly motivated person with a strong desire to use the skills I've gained and the skills I'm continuing to learn in order to provide benefit to organisations and individuals. With over seven years of experience across different industries, I've been able to learn many different aspects of how data is used in a practical setting - from dashboards, data analysis, machine learning models and deployment of models into apps. I'm committed to improving my own skills by learning new data science techniques on a daily basis; I recently taught myself NLP techniques such as sentiment analysis and recommendation systems and went on to build my own personal projects and be involved in projects with clients that used these acquired skills.
+
+
+
+Above all, I'm someone who places extreme importance on doing a great job. With my recent work on the freelance website Upwork I've managed to be involved in interesting and challenging projects and managed to receive 5-star reviews for every single project I've taken on. I like being in situations where I'm faced with new problems and finding ways to deal with them in order to build something functional and useful.  I spent a lot of time learning my craft and continue to do so and the motivator behind that is having the ability to aid and provide function to people and organisations. 
+
+# Background
+
+I'm a qualified Statistician with over six years experience in various data science roles.
+
+My learning journey started at the University of Manchester where I studied Mathematics and naturally gravitated towards statistical modules. After university, I worked as a Data Scientist in the Pharmaceutical, Energy and Banking industries; along the way using many different statistical techniques and seeing how machine learning can provide huge benefits to an organisation.
+
+I started my career in a Pharmaceutical company - performing statistical tests and analysing medical questionnaires in order to provide insight and draw conclusions.  I processed and performed tests that would later go onto publications. These publications would be used to highlight the relationship between drugs and disease outcomes. 
+
+
+Later, I moved into the energy industry, building predictive models that were used to segment customers in order for the business to react to it's client base in the most effective way possible. I built statistical models using random forests to classify customers. The classifications would drive business decisions, for instance, a model would identify  certain customers who are in debt and would be best targeted by a phone call as a preferred method of communication in order to recoup that debt. Understanding customer behavior using the models I created made processes more efficient and saved money in turn.
+
+
+
+
+Moving onto the banking industry, I was in charge of the maintenance and updating of credit risk models that dictated the allocation of funds of the bank. I also created dashboards – producing clear and concise analysis that ensured the business understood its current portfolio and make decisions off the back of that.
+
+
+More recently I took time out to study a Masters in Statistics to understand my profession better.  I've taken on freelance projects - building machine learning models and deploying them into apps for various clients. 
+
+
+After a stint of teaching Mathematics and traveling in 2018, I chose to study a MSc in Statistics in 2020 at the University of Sheffield to strengthen the foundation of the Data Science techniques I’ve learnt and also acquire modern techniques. I used various classification and dimension reduction here, using sci-kit learn and keras, Bayesian statistics and Time series. I was also involved in multiple projects making R shiny dashboards.
+
+All these projects can be found on my github, please feel free to take a look using the link at the top of this page.
+
+
+
+# What I can do
+
+Throughout my career I’ve used and understood many different techniques and programming languages. I’ve used Python, SQL, SAS and R extensively. On top of that I have a depth of experience in various Machine Learning techniques and other statistical methods that can provide benefits in different ways.
+
+
+In my degree and freelancing career I've built various machine learning models (sci-kit learn, Neural Networks and more), to classify, reduce dimensionality and deploy into apps through which users without a statistical background could investigate the profile of genes. 
+
+
+I'm passionate about using my skills to provide functional solutions to people and organisations.
+
+
+
+
+
+
+
+<!-- \smallskip -->
